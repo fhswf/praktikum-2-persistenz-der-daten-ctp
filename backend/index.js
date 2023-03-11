@@ -30,6 +30,17 @@ app.get('/todos', async (req, res) => {
 //
 // Implement the following routes:
 // GET /todos/:id
+app.get('/todos/:id', (req, res) => {
+    const id =parseInt(req.params.id);
+    db.collection('status').queryById(id).findOne()
+      .then(res => {
+        console.log(res)
+      })
+      .catch(error => console.error(error))
+    // ...
+  })
+  
+  
 // POST /todos
 // PUT /todos/:id
 // DELETE /todos/:id
@@ -42,3 +53,7 @@ initDB()
         })
     })
 
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${PORT}`)
+    })
