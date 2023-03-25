@@ -19,17 +19,18 @@ export default class DB {
     }
 
     queryById(id) {
+        return collection.findOne({ id: id });
     }
 
     update(id, order) {
-        // TODO: Implement update
+
     }
 
     delete(id) {
-        // TODO: Implement delete
+        return collection.delete({id:id});
     }
 
     insert(order) {
-        // TODO: Implement insert
+        return collection.insert({order:order});
     }
 }
