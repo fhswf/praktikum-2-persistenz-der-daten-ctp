@@ -50,7 +50,7 @@ In der Datei `backend/src/db.js` finden Sie eine Klasse DB, die eine Verbindung 
 ### Aufgabe 2.1: Implementieren Sie die fehlenden Datenbank-Methoden
 
 Die Methode `DB.queryAll()` ist bereits implementiert. Implementieren Sie analog die fehlenden Methoden für die übrigen CRUD-Operationen analog zu `DB.queryAll()`.
-Die Methoden können jeweils ein `Promise` zurückgeben. Mit den entsprechenden Methoden des Mongo-Treibers (s. [Dokumentation](https://www.mongodb.com/docs/drivers/node/current/)) handelt es sich jeweils um wenige Zeilen.
+Die Methoden können jeweils ein `Promise` zurückgeben. Mit den entsprechenden Methoden des Mongo-Treibers (s. [Dokumentation](ex)) handelt es sich jeweils um wenige Zeilen.
 
 ### Aufgabe 2.2: Implementieren Sie die fehlenden REST-Endpoints
 

@@ -19,7 +19,6 @@ export default class DB {
     }
 
     queryById(id) {
-        // TODO: Implement queryById
     }
 
     update(id, order) {
